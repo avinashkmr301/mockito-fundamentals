@@ -16,9 +16,9 @@ class TradingAppTest {
 
     @Test
     void executeTradeGuaranteeHappyPath() {
-        AuditReport auditRepo = Mockito.mock();
-        Exchange exchange = mock();
-        MarketData marketData = mock();
+        AuditReport auditRepo = Mockito.mock(AuditReport.class);
+        Exchange exchange = mock(Exchange.class);
+        MarketData marketData = mock(MarketData.class);
 
         Collection<? extends Object> marketData1 = mock();
 
